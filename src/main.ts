@@ -10,6 +10,7 @@ import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 import { aliases, mdi } from 'vuetify/iconsets/mdi'
+import VueEasyLightbox from 'vue-easy-lightbox'
 
 const vuetify = createVuetify({
   components,
@@ -30,5 +31,6 @@ const app = createApp(App)
 
 app.use(router)
 app.use(vuetify)
+app.use(VueEasyLightbox)
 
 app.mount('#app')

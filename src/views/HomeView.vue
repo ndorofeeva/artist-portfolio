@@ -16,8 +16,8 @@ const mobile = computed(() => {
     <v-row>
       <v-col :cols="mobile ? 12 : 6">
         <ProjectCover
-          imgSrc="/Lighthouse3.jpg"
-          hoverImgSrc="Lighthouse2.jpg"
+          imgSrc="/Lighthouse.png"
+          hoverImgSrc="Lighthouse2.png"
           routeName="Lighthouse"
           title="The lighthouse"
         />

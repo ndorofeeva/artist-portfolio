@@ -26,7 +26,7 @@ const mobile = computed(() => {
     <v-img
       height="100%"
       cover
-      class="image"
+      class="image initial"
       :src=props.imgSrc
     />
     <v-img
@@ -70,5 +70,9 @@ const mobile = computed(() => {
 
 .image-container:hover .hover, .mobile{
   visibility: visible;
+}
+
+.image-container:hover .image.initial{
+  visibility: hidden;
 }
 </style>

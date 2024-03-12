@@ -11,3 +11,17 @@
 .full-height {
   height: 100%!important;
 }
+
+main .vel-modal { /* increase opacity of vue-easy-lightbox background */
+  background: rgba(0, 0, 0, .9);
+}
+
+main .vel-img-title { /* increase text size of vue-easy-lightbox title */
+  font-size: 1rem;
+  line-height: 1.2;
+  bottom: 54px;
+}
+
+.grey {
+  color: #737373;
+}
