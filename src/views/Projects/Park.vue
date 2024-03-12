@@ -23,7 +23,7 @@ const onHide = () => (visibleRef.value = false);
     <v-container class="park">
       <h1 class="text-center my-3">Silent night</h1>
       <p class="text-center">Illustration of the story about William, an elderly widower, who comes every evening to the same bench in the park</p> 
-      <p class="text-center mb-10">where he used to spend happy days with his wife Dorothy.</p>
+      <p class="text-center mb-10">where he used to spend happy days with his wife.</p>
       <v-img @click="onShow(0)" src="/Park/2.png" class="my-3"/>
       <p class="text-center mb-5 mt-2 font-italic grey text-body-2">Composition variations and references</p>
       <v-img @click="onShow(1)" src="/Park/2.jpg" class="my-3"/>

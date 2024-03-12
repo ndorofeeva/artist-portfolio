@@ -2,17 +2,21 @@
 import VueEasyLightbox from 'vue-easy-lightbox'
 import { ref } from 'vue'
 
+const images = [13, 3, 12, 14, 16, 15, 17];
+const titles = [
+  'Originals from the film',
+  'Colorscript with references',
+  'Redesigned b&w frames and colorkeys',
+  'Color keys detailed view',
+  'Local colors',
+  'Main frames with local colors applied',
+  'Lighting breakdown',
+];
+const imageSrc = images.map(number => `/Lighthouse/${number}.png`);
+
 const visibleRef = ref(false);
 const indexRef = ref(0); // default 0
-const imgsRef = ref([
-  { src: '/Lighthouse/13.png', title: 'Originals from the film' },
-  { src: '/Lighthouse/3.png', title: 'Colorscript with references' },
-  { src: '/Lighthouse/12.png', title: 'Redesigned b&w frames and colorkeys' },
-  { src: '/Lighthouse/14.png', title: 'Color keys detailed view' },
-  { src: '/Lighthouse/16.png', title: 'Local colors' },
-  { src: '/Lighthouse/15.png', title: 'Main frames with local colors applied' },
-  { src: '/Lighthouse/17.png', title: 'Lighting breakdown' },
-]);
+const imgsRef = ref(imageSrc.map((src, index) => {return {src: src, title: titles[index]}}));
 
 const onShow = (index: number) => {
   visibleRef.value = true;
@@ -27,20 +31,20 @@ const onHide = () => (visibleRef.value = false);
       <h1 class="text-center mt-3">The Lighthouse</h1>
       <p class="text-center">For this project I was tasked with reverse engineering a black and white film and making color keys and lighting breakdown.</p>
       <p class="text-center mb-10">I chose 4 main sequences from the film "The Lighthouse":</p>
-      <v-img @click="onShow(0)" src="/Lighthouse/13.png"/>
-      <p class="text-center mb-10 mt-2 font-italic grey text-body-2">Originals from the film</p>
-      <v-img @click="onShow(1)" src="/Lighthouse/3.png"/>
-      <p class="text-center mb-10 mt-2 font-italic grey text-body-2">Colorscript with references</p>
-      <v-img @click="onShow(2)" src="/Lighthouse/12.png" class="my-3"/>
-      <p class="text-center mb-10 mt-2 font-italic grey text-body-2">Redesigned b&w frames and colorkeys</p>
-      <v-img @click="onShow(3)" src="/Lighthouse/14.png" class="my-3"/>
-      <p class="text-center mb-10 mt-2 font-italic grey text-body-2">Color keys detailed view</p>
-      <v-img @click="onShow(4)" src="/Lighthouse/16.png" class="my-3"/>
-      <p class="text-center mb-10 font-italic grey text-body-2">Local colors</p>
-      <v-img @click="onShow(5)" src="/Lighthouse/15.png" class="my-3"/>
-      <p class="text-center mb-10 mt-2 font-italic grey text-body-2">Main frames with local colors applied</p>
-      <v-img @click="onShow(6)" src="/Lighthouse/17.png" class="my-3"/>
-      <p class="text-center mb-10 mt-2 font-italic grey text-body-2">Lighting breakdown</p>
+      <v-img @click="onShow(0)" :src="imageSrc[0]"/>
+      <p class="text-center mb-10 mt-2 font-italic grey text-body-2">{{ titles[0] }}</p>
+      <v-img @click="onShow(1)" :src="imageSrc[1]"/>
+      <p class="text-center mb-10 mt-2 font-italic grey text-body-2">{{ titles[1] }}</p>
+      <v-img @click="onShow(2)" :src="imageSrc[2]" class="my-3"/>
+      <p class="text-center mb-10 mt-2 font-italic grey text-body-2">{{ titles[2] }}</p>
+      <v-img @click="onShow(3)" :src="imageSrc[3]" class="my-3"/>
+      <p class="text-center mb-10 mt-2 font-italic grey text-body-2">{{ titles[3] }}</p>
+      <v-img @click="onShow(4)" :src="imageSrc[4]" class="my-3"/>
+      <p class="text-center mb-10 font-italic grey text-body-2">{{ titles[4] }}</p>
+      <v-img @click="onShow(5)" :src="imageSrc[5]" class="my-3"/>
+      <p class="text-center mb-10 mt-2 font-italic grey text-body-2">{{ titles[5] }}</p>
+      <v-img @click="onShow(6)" :src="imageSrc[6]" class="my-3"/>
+      <p class="text-center mb-10 mt-2 font-italic grey text-body-2">{{ titles[6] }}</p>
     </v-container>
 
     <vue-easy-lightbox

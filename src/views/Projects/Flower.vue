@@ -33,7 +33,7 @@ const onHide = () => (visibleRef.value = false);
       <div class="mb-3">
         <v-img @click="onShow(2)" cover src="/Flower/20.png" />
       </div>
-      <p class="text-center mb-5 mt-2 font-italic grey text-body-2">Composition variations as matrix studies</p>
+      <p class="text-center mb-5 mt-2 font-italic grey text-body-2">Composition variations</p>
       <div>
         <v-img @click="onShow(3)" cover src="/Flower/19.png" />
       </div>
