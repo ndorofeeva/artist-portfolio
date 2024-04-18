@@ -20,7 +20,7 @@ const mobile = computed(() => {
         <nav>
           <RouterLink to="/">Projects</RouterLink>
           <RouterLink to="/plein-airs">PleinAirs</RouterLink>
-          <RouterLink to="/other">Personal illustrations</RouterLink>
+          <RouterLink to="/personal-illustrations">Personal illustrations</RouterLink>
           <RouterLink to="/about">About</RouterLink>
         </nav>
       </div>
@@ -35,7 +35,7 @@ const mobile = computed(() => {
         <nav class="mobile-menu">
           <RouterLink class="d-block text-center py-5" to="/">Projects</RouterLink>
           <RouterLink class="d-block text-center py-5" to="/plein-airs">PleinAirs</RouterLink>
-          <RouterLink class="d-block text-center py-5" to="/other">Other works</RouterLink>
+          <RouterLink class="d-block text-center py-5" to="/personal-illustrations">Personal illustrations</RouterLink>
           <RouterLink class="d-block text-center py-5" to="/about">About</RouterLink>
         </nav>
       </v-navigation-drawer>

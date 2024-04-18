@@ -28,6 +28,7 @@ const mobile = computed(() => {
           hoverImgSrc="The_girl_and_the_flower_hover.jpg"
           routeName="Flower"
           title="The magic flower"
+          :light="true"
         />
       </v-col>
     </v-row>
@@ -46,6 +47,7 @@ const mobile = computed(() => {
           hoverImgSrc="Morning_chess_hover.jpg"
           routeName="Chess"
           title="Chess match"
+          :light="true"
         />
       </v-col>
     </v-row>

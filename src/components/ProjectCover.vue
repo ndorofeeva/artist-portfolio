@@ -5,12 +5,15 @@ import { computed } from 'vue'
 
 const { name } = useDisplay()
 
-const props = defineProps<{
+const props = withDefaults(defineProps<{
   imgSrc: string
   routeName: string
   title: string
   hoverImgSrc?: string
-}>()
+  light: boolean
+}>(), {
+  light: false
+})
 
 const goTo = () => {
   router.push({ name: props.routeName });
@@ -26,7 +29,7 @@ const mobile = computed(() => {
     <v-img
       height="100%"
       cover
-      class="image initial"
+      :class="['image', { 'initial': !mobile }]"
       :src=props.imgSrc
     />
     <v-img
@@ -36,7 +39,7 @@ const mobile = computed(() => {
       v-if="hoverImgSrc && !mobile"
       :src=props.hoverImgSrc
     />
-    <div :class="['title', 'hover', 'text-uppercase', { 'mobile': mobile }, { 'text-decoration-underline': mobile }]">
+    <div :class="['title', 'hover', 'text-uppercase', { 'mobile': mobile }, { 'text-decoration-underline': mobile }, { 'light': light }]">
       <p>{{props.title}}</p>
     </div>
   </div>
@@ -64,8 +67,18 @@ const mobile = computed(() => {
   align-items: center;
   font-family: cursive;
   font-size: x-large;
-  opacity: 0.5;
-  background: rgba(1,1,1,0.5);
+  background: rgba(1,1,1,0.3);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.title p {
+  padding: 0 50px;
+  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0.8) 25%, rgba(0, 0, 0, 0.8) 75%, rgba(0,0,0,0) 100%);
+}
+
+.title.light p {
+  padding: 0 50px;
+  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(21, 12, 20, 0.6) 25%, rgba(21, 12, 20, 0.6) 75%, rgba(0,0,0,0) 100%);
 }
 
 .image-container:hover .hover, .mobile{

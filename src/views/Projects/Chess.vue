@@ -25,11 +25,11 @@ const onHide = () => (visibleRef.value = false);
   <main>
     <v-container class="chess">
       <h1 class="text-center mt-3">Chess match</h1>
-      <p class="text-center mb-8">Lighting scenarios for 3d set of Italian fishign town based on Kuba Kozłowski 3d set with character Lorenzo.</p>
+      <p class="text-center mb-8">Lighting scenarios for 3d set of Italian fishing town based on Kuba Kozłowski 3d set with character Lorenzo.</p>
 
       <h2 class="mb-3 mt-8">Summer morning</h2>
-      <p class="mb-4 font-italic grey font-weight-regular">In the morning, while most of the town is sleeping or fishing, Lorenzo and his friend Gepetto meet 
-        at the chess table in a quiet street, filled with the fragrance of summer flowers and lit by warm morning sunlight </p>
+      <p class="mb-4 font-italic grey font-weight-regular">In the morning, while most of the town is still sleeping or out fishing, Lorenzo and his friend Gepetto meet 
+        at the chess table in a quiet street, filled with the fragrance of summer flowers and lit by warm morning sunlight. </p>
       <v-img @click="onShow(0)" src="/Chess/6.png" />
       <p class="mb-4 font-italic grey text-body-2">Original by Kuba Kozłowski</p>
       <v-img @click="onShow(1)" class="mb-2" src="/Chess/2.jpg" />
@@ -37,16 +37,17 @@ const onHide = () => (visibleRef.value = false);
       <p class="text-center mt-2 font-italic grey text-body-2">Lighting variations</p>
 
       <h2 class="mb-3 mt-8">Festive town</h2>
-      <p class="mb-4 font-italic grey font-weight-regular">Lorenzo doesn't like the noise of the busy lively town.
-        So when the evening festivities begin and the town fills with people, sounds of conversations and music, both friends prefer to go rest at home.  
+      <p class="mb-4 font-italic grey font-weight-regular">Lorenzo finds discomfort amidst the noise of the busy lively town.
+        So when the evening festivities begin and the town fills with people and sounds of conversations and music, both friends prefer to rest at home.
       </p>
       <v-img @click="onShow(3)" src="/Chess/3.png" />
       <p class="text-center mb-5 mt-2 font-italic grey text-body-2">Progression & references</p>
       <v-img @click="onShow(4)" src="/Chess/8.jpg" />
 
       <h2 class="mb-3 mt-8">Night retreat</h2>
-      <p class="mb-4 font-italic grey font-weight-regular"> When the bars are closed, people gone home and the streets are silent again,
-        it's time for a rematch for Lorenzo and his friend. Just one though, they don't want to miss the best fishing time tomorrow morning.
+      <p class="mb-4 font-italic grey font-weight-regular"> When the bars close and the streets become empty and quiet once more, 
+        it's time for Lorenzo and his friend to have a rematch.
+        Just one though, they don't want to miss the best fishing time tomorrow morning.
       </p>
       <v-img @click="onShow(5)" src="/Chess/5.png" />
       <p class="text-center mb-5 mt-2 font-italic grey text-body-2">Lighting variations + color & references</p>
