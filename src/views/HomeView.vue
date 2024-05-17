@@ -14,15 +14,7 @@ const mobile = computed(() => {
   <main>
     <v-container>
     <v-row>
-      <v-col :cols="mobile ? 12 : 6">
-        <ProjectCover
-          imgSrc="/Lighthouse.png"
-          hoverImgSrc="Lighthouse2.png"
-          routeName="Lighthouse"
-          title="The lighthouse"
-        />
-      </v-col>
-      <v-col :cols="mobile ? 12 : 6">
+      <v-col :cols="12">
         <ProjectCover
           imgSrc="/The_girl_and_the_flower.jpg"
           hoverImgSrc="The_girl_and_the_flower_hover.jpg"
@@ -31,9 +23,7 @@ const mobile = computed(() => {
           :light="true"
         />
       </v-col>
-    </v-row>
-    <v-row>
-      <v-col :cols="mobile ? 12 : 6">
+      <v-col :cols="12">
         <ProjectCover
           imgSrc="/Flowers_park.jpg"
           hoverImgSrc="Flowers_park_glow.jpg"
@@ -41,7 +31,7 @@ const mobile = computed(() => {
           title="Silent night"
         />
       </v-col>
-      <v-col :cols="mobile ? 12 : 6">
+      <v-col :cols="12">
         <ProjectCover
           imgSrc="/Morning_chess.jpg"
           hoverImgSrc="Morning_chess_hover.jpg"
