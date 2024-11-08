@@ -25,14 +25,14 @@ const onHide = () => (visibleRef.value = false);
       <p class="text-center mb-6">A young girl must cross an enchanted forest known for carrying strange spirits to find a 
         magic flower that will be the cure for her ailing grandma.</p>
       <div class="mb-3">
-        <v-img @click="onShow(1)" cover src="/The_girl_and_the_flower.jpg" />
+        <v-img @click="onShow(0)" cover src="/The_girl_and_the_flower.jpg" />
       </div>
       <div class="mb-3">
-        <v-img @click="onShow(2)" cover src="/Flower/20.png" />
+        <v-img @click="onShow(1)" cover src="/Flower/20.png" />
       </div>
       <p class="text-center mb-5 mt-2 font-italic grey text-body-2">Composition variations</p>
       <div>
-        <v-img @click="onShow(3)" cover src="/Flower/19.png" />
+        <v-img @click="onShow(2)" cover src="/Flower/19.png" />
       </div>
       <p class="text-center mb-5 mt-2 font-italic grey text-body-2">Color exploration</p>
     </v-container>
