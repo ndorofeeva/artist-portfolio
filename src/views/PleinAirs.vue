@@ -2,7 +2,7 @@
 import VueEasyLightbox from 'vue-easy-lightbox'
 import { ref } from 'vue'
 
-const images = [23, 7, 33, 36, 26, 25, 24, 54, 56, 57, 44, 49, 39];
+const images = [23, 7, 33, 36, 26, 25, 24, 56, 57, 39, 44, 54];
 const titles = [
   'Cercedilla mountains',
   'Wildflowers',
@@ -11,7 +11,6 @@ const titles = [
   'Simplified shapes filled with gradient still life',
   'Simplified shapes filled with gradient still life',
   'Simplified shapes filled with gradient still life',
-  'Watercolor & gouache mini',
   'Watercolor & gouache mini',
   'Watercolor & gouache mini',
   'Watercolor & gouache mini',
@@ -63,19 +62,19 @@ const onHide = () => (visibleRef.value = false);
 
       <v-row dense>
         <v-col cols="4">
+          <v-img cover height="100%" :src="imageSrc[7]" @click="onShow(7)"/>
+        </v-col>
+        <v-col>
           <v-img cover height="100%" :src="imageSrc[8]" @click="onShow(8)"/>
         </v-col>
         <v-col>
           <v-img cover height="100%" :src="imageSrc[9]" @click="onShow(9)"/>
         </v-col>
         <v-col>
-          <v-img cover height="100%" :src="imageSrc[12]" @click="onShow(12)"/>
-        </v-col>
-        <v-col>
           <v-img cover height="100%" :src="imageSrc[10]" @click="onShow(10)"/>
         </v-col>
         <v-col cols="3">
-          <v-img cover height="100%" :src="imageSrc[7]" @click="onShow(7)"/>
+          <v-img cover height="100%" :src="imageSrc[11]" @click="onShow(11)"/>
         </v-col>
       </v-row>
 <!-- 
