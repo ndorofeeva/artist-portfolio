@@ -2,6 +2,7 @@
 import VueEasyLightbox from 'vue-easy-lightbox'
 import { ref } from 'vue'
 
+window.scrollTo(0,0);
 const visibleRef = ref(false);
 const indexRef = ref(0); // default 0
 const imgsRef = ref([

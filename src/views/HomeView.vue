@@ -25,6 +25,15 @@ const mobile = computed(() => {
       </v-col>
       <v-col :cols="12">
         <ProjectCover
+          imgSrc="/Festive town.jpg"
+          hoverImgSrc="Festive town.jpg"
+          routeName="Chess"
+          title="Chess match"
+          :light="true"
+        />
+      </v-col>
+      <v-col :cols="12">
+        <ProjectCover
           imgSrc="/Flowers_park.jpg"
           hoverImgSrc="Flowers_park_glow.jpg"
           routeName="Park"
@@ -33,10 +42,10 @@ const mobile = computed(() => {
       </v-col>
       <v-col :cols="12">
         <ProjectCover
-          imgSrc="/Morning_chess.jpg"
-          hoverImgSrc="Morning_chess_hover.jpg"
-          routeName="Chess"
-          title="Chess match"
+          imgSrc="/Faraway.jpg"
+          hoverImgSrc="Faraway.jpg"
+          routeName="Faraway"
+          title="Faraway"
           :light="true"
         />
       </v-col>
