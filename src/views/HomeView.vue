@@ -42,10 +42,9 @@ const mobile = computed(() => {
       </v-col>
       <v-col :cols="12">
         <ProjectCover
-          imgSrc="/Faraway.jpg"
-          hoverImgSrc="Faraway.jpg"
+          imgSrc="/Faraway.png"
+          hoverImgSrc="Faraway_hover.png"
           routeName="Faraway"
-          title="Faraway"
           :light="true"
         />
       </v-col>

@@ -30,7 +30,8 @@ const onHide = () => (visibleRef.value = false);
   <main>
     <div class="faraway">
       <h1 class="text-center mt-3">Faraway</h1>
-      <p class="text-center mb-10">A story about the boy facing his own fears to come back to come back to life</p>
+      <p class="text-center">The story of a young boy trying to get home. He faces his own fears on the journey back to life.</p>
+      <p class="text-center mb-10">In the end the boy prevails and wakes up in a hospital with his mom holding his hand.</p>
 
       <v-img @click="onShow(0)" src="/Faraway/story_beats.png" />
       <h3 class="mb-10 text-grey-lighten-1 text-center">Story beats in bw</h3>

@@ -8,7 +8,7 @@ const { name } = useDisplay()
 const props = withDefaults(defineProps<{
   imgSrc: string
   routeName: string
-  title: string
+  title?: string
   hoverImgSrc?: string
   light: boolean
 }>(), {
@@ -39,7 +39,7 @@ const mobile = computed(() => {
       v-if="hoverImgSrc && !mobile"
       :src=props.hoverImgSrc
     />
-    <div :class="['title', 'hover', 'text-uppercase', { 'mobile': mobile }, { 'text-decoration-underline': mobile }, { 'light': light }]">
+    <div v-if="title" :class="['title', 'hover', 'text-uppercase', { 'mobile': mobile }, { 'text-decoration-underline': mobile }, { 'light': light }]">
       <p>{{props.title}}</p>
     </div>
   </div>
