@@ -33,6 +33,8 @@ const onHide = () => (visibleRef.value = false);
       <p class="text-center">The story of a young boy trying to get home. He faces his own fears on the journey back to life.</p>
       <p class="text-center mb-10">In the end the boy prevails and wakes up in a hospital with his mom holding his hand.</p>
 
+      <p class=" mb-5"> The whole story can be viewed in <RouterLink to="/faraway-pdf">The art book of Faraway</RouterLink></p>
+
       <v-img @click="onShow(0)" src="/Faraway/story_beats.png" />
       <h3 class="mb-10 text-grey-lighten-1 text-center">Story beats in bw</h3>
 

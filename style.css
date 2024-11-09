@@ -25,3 +25,7 @@ main .vel-img-title { /* increase text size of vue-easy-lightbox title */
 .grey {
   color: #737373;
 }
+
+a {
+  color: inherit;
+}

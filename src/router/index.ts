@@ -67,6 +67,14 @@ const router = createRouter({
       component: () => import('../views/Projects/Faraway.vue')
     },
     {
+      path: '/faraway-pdf',
+      name: 'FarawayPdf',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/Projects/FarawayPdf.vue')
+    },
+    {
       path: '/lighthouse',
       name: 'Lighthouse',
       // route level code-splitting
