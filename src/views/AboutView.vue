@@ -16,10 +16,10 @@ const mobile = computed(() => {
         <v-spacer/>
         <v-col :cols="mobile ? 12 : 4" :class="{ 'text-mobile' : mobile }">
           <p class="mb-6 text-h4 text-center">Greetings!</p>
-          <p>I'm Natalia Dorofeieva, digital painter and visdev artist from Ukraine based in Madrid.</p>
-          <p class="mb-5">I specialize in environment design and color keys.</p>
-          <p class="mb-5">Inspired by cinematography, music, books and, most of all, nature.
-            Love cycling, hiking, travel, photography and my cat Halva.</p>
+          <p>I'm Natalia Dorofeieva, digital and traditional painter from Crimea, Ukraine, based in Madrid.</p>
+          <p class="mb-5">You can find here my watercolor & gouache along with digital plein airs, illustrations and some visdev projects.</p>
+          <p class="mb-5">Inspired by nature and beautiful spanish architecture.
+            Besides art, I love cycling, hiking, travel and photography.</p>
           <p>I would love to connect!</p>
         </v-col>
         <v-col :cols="mobile ? 12 : 4">

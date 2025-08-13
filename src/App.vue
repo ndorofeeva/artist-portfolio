@@ -18,9 +18,9 @@ const mobile = computed(() => {
 
       <div v-if="!mobile">
         <nav>
-          <RouterLink to="/">Projects</RouterLink>
+          <RouterLink to="/">Illustrations</RouterLink>
           <RouterLink to="/plein-airs">PleinAirs</RouterLink>
-          <RouterLink to="/personal-illustrations">Personal illustrations</RouterLink>
+          <RouterLink to="/projects">Projects</RouterLink>
           <RouterLink to="/about">About</RouterLink>
         </nav>
       </div>
@@ -67,6 +67,10 @@ const mobile = computed(() => {
   }
   
   a:hover {
+    opacity: 1;
+  }
+
+  nav a.router-link-active {
     opacity: 1;
   }
 

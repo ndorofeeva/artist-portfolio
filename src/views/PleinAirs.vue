@@ -2,7 +2,7 @@
 import VueEasyLightbox from 'vue-easy-lightbox'
 import { ref } from 'vue'
 
-const images = [23, 7, 33, 36, 26, 25, 24, 56, 57, 39, 44, 54];
+const images = [23, 7, 33, 36, 26, 25, 24, 62, 57, 39, 44, 54, 58, 59, 61, 63];
 const titles = [
   'Cercedilla mountains',
   'Wildflowers',
@@ -34,6 +34,40 @@ const onHide = () => (visibleRef.value = false);
   <main>
     <v-container class="plein-airs">
       <v-row dense>
+        <v-col>
+          <v-img cover height="100%" :src="imageSrc[12]" @click="onShow(12)"/>
+        </v-col>
+        <v-col>
+          <v-img cover height="100%" :src="imageSrc[13]" @click="onShow(13)"/>
+        </v-col>
+        </v-row>
+      <v-row dense>
+        <v-col>
+          <v-img cover height="100%" :src="imageSrc[14]" @click="onShow(14)"/>
+        </v-col>
+        <v-col cols="3">
+          <v-img cover height="100%" :src="imageSrc[15]" @click="onShow(15)"/>
+        </v-col>
+      
+        <v-col>
+          <v-img cover height="100%" :src="imageSrc[7]" @click="onShow(7)"/>
+        </v-col>
+      </v-row>
+      <v-row dense>
+        <v-col>
+          <v-img cover height="100%" :src="imageSrc[8]" @click="onShow(8)"/>
+        </v-col>
+        <v-col>
+          <v-img cover height="100%" :src="imageSrc[9]" @click="onShow(9)"/>
+        </v-col>
+        <v-col>
+          <v-img cover height="100%" :src="imageSrc[10]" @click="onShow(10)"/>
+        </v-col>
+        <v-col cols="4">
+          <v-img cover height="100%" :src="imageSrc[11]" @click="onShow(11)"/>
+        </v-col>
+      </v-row>
+      <v-row dense>
         <v-col cols="5">
           <v-img cover height="100%" :src="imageSrc[0]" @click="onShow(0)"/>
         </v-col>
@@ -59,66 +93,6 @@ const onHide = () => (visibleRef.value = false);
           <v-img cover height="100%" :src="imageSrc[6]" @click="onShow(6)"/>
         </v-col>
       </v-row>
-
-      <v-row dense>
-        <v-col cols="4">
-          <v-img cover height="100%" :src="imageSrc[7]" @click="onShow(7)"/>
-        </v-col>
-        <v-col>
-          <v-img cover height="100%" :src="imageSrc[8]" @click="onShow(8)"/>
-        </v-col>
-        <v-col>
-          <v-img cover height="100%" :src="imageSrc[9]" @click="onShow(9)"/>
-        </v-col>
-        <v-col>
-          <v-img cover height="100%" :src="imageSrc[10]" @click="onShow(10)"/>
-        </v-col>
-        <v-col cols="3">
-          <v-img cover height="100%" :src="imageSrc[11]" @click="onShow(11)"/>
-        </v-col>
-      </v-row>
-<!-- 
-      <v-row dense>
-        <v-col>
-          <v-row dense>
-            <v-col>
-              <v-img cover height="100%" :src="imageSrc[13]" @click="onShow(13)"/>
-            </v-col>
-          </v-row>
-          <v-row dense>
-            <v-col>
-              <v-img cover height="100%" :src="imageSrc[8]" @click="onShow(8)"/>
-            </v-col>
-            <v-col>
-              <v-img cover height="100%" :src="imageSrc[9]" @click="onShow(9)"/>
-            </v-col>
-          </v-row>
-        </v-col>
-        <v-col cols="3">
-          <v-row dense>
-            <v-col>
-              <v-img cover height="100%" :src="imageSrc[7]" @click="onShow(7)"/>
-            </v-col>
-          </v-row>
-          <v-row dense>
-            <v-col>
-              <v-img cover height="100%" :src="imageSrc[10]" @click="onShow(10)"/>
-            </v-col>
-          </v-row>
-        </v-col>
-        <v-col>
-          <v-row dense>
-            <v-col>
-              <v-img cover height="100%" :src="imageSrc[14]" @click="onShow(14)"/>
-            </v-col>
-          </v-row>
-          <v-row dense>
-            <v-col>
-              <v-img cover height="100%" :src="imageSrc[15]" @click="onShow(15)"/>
-            </v-col>
-          </v-row>
-        </v-col>
-      </v-row> -->
     </v-container>
 
     <vue-easy-lightbox
